@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Meme() {
 
+    const id = React.useId();
     const [allMemes, setAllMemes] = React.useState({});
 
     const [meme, setMeme] = React.useState({
@@ -19,9 +20,6 @@ export default function Meme() {
         getMemes();
     }, [])
 
-
-    const id = React.useId();
-    
     function getMemeImage() {
         setMeme({
             ...meme,
@@ -42,26 +40,33 @@ export default function Meme() {
     return (
         <main>
             <div className='form'>
-                {/* <label htmlFor={id + '-topText'} className='form--label'>Top Text</label> */}
-                <input 
-                    type='text'
-                    className="form--input"
-                    name='topText' 
-                    placeholder='Top Text'
-                    id={id + '-topText'}
-                    onChange={handleChange}
-                    value={meme.topText}
-                />
-                {/* <label htmlFor={id + '-bottomText'} className='form--label'>Bottom Text</label> */}
-                <input 
-                    type='text' 
-                    className="form--input"
-                    name='bottomText' 
-                    placeholder='Bottom Text'
-                    id={id + '-bottomText'}
-                    onChange={handleChange}
-                    value={meme.bottomText}
-                />
+                <div className='form--firstLine'>
+                    <div className='form--entry'>
+                        <input 
+                            type='text'
+                            className="form--input"
+                            name='topText' 
+                            id={id + '-topText'}
+                            onChange={handleChange}
+                            value={meme.topText}
+                            required
+                        />
+                        <label htmlFor={id + '-topText'} className='form--label'>Top Text</label>
+                    </div>
+                    <div className='form--entry'>                        
+                        <input
+                            type='text' 
+                            className="form--input"
+                            name='bottomText' 
+                            id={id + '-bottomText'}
+                            onChange={handleChange}
+                            value={meme.bottomText}
+                            required
+                        />
+                        <label htmlFor={id + '-bottomText'} className='form--label'>Bottom Text</label>                  
+                    </div>
+                </div>
+                
                 <button
                     className="form--button"
                     onClick={getMemeImage}

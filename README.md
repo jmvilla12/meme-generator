@@ -24,14 +24,11 @@ This is a solution to the Meme Generator project on [Scrimba](https://v2.scrimba
 
 ### Screenshot
 - Project view on a desktop device.
-![screenshot](./public/screenshot_desktop.PNG)
-
-- Responsive design on a mobile device.
-![screenshot_mobile](./public/screenshot_mobile.PNG)
+![screenshot](./public/screenshot_desktop.png)
 
 ### Links
 - Live Site: [@Netlify](https://traveljournal-jmvilla12.netlify.app/)
-- Source Code: [@Github](https://github.com/jmvilla12/travel-journal)
+- Source Code: [@Github](https://github.com/jmvilla12/meme-generator)
 
 ### Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

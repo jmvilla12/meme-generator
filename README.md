@@ -71,7 +71,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```
 
 <ul>
-  <li>For the dinamic animations the use of pseudo-classes like <code>:focus</code> and <code>:valud</code> will be needed</li>
+  <li>For the dinamic animations the use of pseudo-classes like <code>:focus</code> and <code>:valid</code> will be needed</li>
 </ul>
 
 ```css
